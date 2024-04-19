@@ -107,7 +107,6 @@ elAddBtn.addEventListener("click", function(){
     
     </form>
     `
-    
     let elAddForm = document.querySelector(".add-form-submit")
     let elInputChange = document.querySelector(".get-img")
     let elRenderImg = document.querySelector(".render-img")
@@ -115,7 +114,6 @@ elAddBtn.addEventListener("click", function(){
     elInputChange.addEventListener("change", function(evt){
         elRenderImg.src = URL.createObjectURL(evt.target.files[0]);
     })
-
     elAddForm.addEventListener("submit", function(evt){
         evt.preventDefault()
         let data = {
@@ -148,7 +146,6 @@ elModalWrapper.addEventListener("click", function(evt){
         elModalWrapper.classList.remove("open-modal")
     }
 })
-
 
 function renderFunction(arr, list, id) {
     list.innerHTML = ""
@@ -218,7 +215,6 @@ function renderFunction(arr, list, id) {
 }
 renderFunction(products, elTbody, 0)
 
-
 // --------------Order delete start----------
 
 function deleteOrderCLick(id){
@@ -237,8 +233,6 @@ function deleteOrderCLick(id){
 }
 
 // --------------Order delete end----------
-
-
 
 // -------Update Start---
 
@@ -353,7 +347,6 @@ function deleteBtnCLick(id){
         renderFunction(products, elTbody, finObj.type)
     }
 }
-
 
 // -----------SEARCH-START-------
 
