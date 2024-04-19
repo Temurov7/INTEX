@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ui.css">
+    <title>INTEX-MARKET.UZ</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+  <header class="site-header bg-[#009398] py-[20px]">
+    <div class="container">
+      <div class="header">
+        <a href="/" class="header__logo-link">INTEX-MARKET.UZ</a>
+        <div class="flex mx-auto gap-20">
+          <a href="/" class="header__item-link ">Каркасные бассейны</a>
+          <a href="/" class="header__item-link ">Надувные бассейны</a>
+        </div>
+        <ul class="header__list">
+          <li class="header__item">
+            <span  class="header__item-span">(99) 911 02 04</span>
+            <div class="header__item-img">
+              <a target="blank" href="http://t.me/temurov7" class="header__item-link">
+                <img src="./images/telegram.png" alt="Telegram Img" width="100%" height="100%">
+              </a>
+              <a target="blank" href="http://instagram.com/temurov__7" class="header__item-link">
+                <img src="./images/Instagram.png" alt="Instagram Img" width="100%" height="100%">
+              </a>
+              <a href="/" class="header__item-link">
+                <img src="./images/Uzb.png" alt="Uzb Img" width="100%" height="100%">
+              </a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+   <main>
+    <section class="hero-section">
+      <img src="./images/INTEX-easy-set.png" alt="INTEXT EASY SET" width="100%" height="100%">
+      <h2 class="hero__title">Сезонная распродажа!</h2>
+      <ul class="hero__list">
+        <li class="hero__item">
+          <span class="hero__span">1</span>
+          <div class="hero__item-texts">
+            <h3 class="hero__title2">Бесплатная доставка бассейна</h3>
+            <p class="hero__text">Мы ценим наших клиентов, можете быть уверены в качестве нашего сервиса!</p>
+          </div>
+        </li>
+        <li class="hero__item">
+          <span class="hero__span">2</span>
+          <div class="hero__item-texts">
+            <h3 class="hero__title2">Специальная химия в подарок</h3>
+            <p class="hero__text">Специальная очищающая химия для бассейна - бесплатно</p>
+          </div>
+        </li>
+        <li class="hero__item">
+          <span class="hero__span">3</span>
+          <div class="hero__item-texts">
+            <h3 class="hero__title2">Гарантия качества</h3>
+            <p class="hero__text">Вся продукция INTEX является оригинальной</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+        <div class="karkasniy-wrapper">
+            <h2>Каркасные бассейны</h2>
+        </div>
+        <ul class="karkasniy-list"></ul>
+    </section>
+    <section>
+        <div class="karkasniy-wrapper">
+            <h2>Надувные бассейны</h2>
+        </div>
+        <ul class="naduvniy-list"></ul>
+    </section>
+    <section>
+        <div class="besplatniy-dastavka">
+            <h2>Бесплатная доставка</h2>
+            <p>Бесплатная доставка осуществляется в пределах города Ташкент (за пределами города доставка оплачивается отдельно)</p>
+            <button>Оформить заказ</button>
+        </div>
+    </section>
+    <section>
+        <div class="klient-wrapper">
+            <h2>Ценности наших клиентов</h2>
+        </div>
+    </section>
+   </main>
+   <div id="modal-wrapper" class="modal-wrapper">
+    <div class="modal"></div>
+</div>
+    
+</body>
+<script src="./js/ui.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</html>
